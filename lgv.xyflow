@@ -5,6 +5,7 @@ on
    then
       print_all:@print("------- metadata.scm.fullName:" + metadata.scm.fullName),
       print_all:@print("--------metadata.scm:" + metadata.scm),
+      print_all:@print("--------metadata:" + metadata),
       print_status:@print("updating xxx commit status on repo: " + metadata.scm.fullName),
       print_status_all:@print("updating YYYYYY commit status on repo: " + metadata),
       print_action:@print("open ticket with: " + metadata.scm.fullName),
