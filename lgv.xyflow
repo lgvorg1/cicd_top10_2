@@ -7,6 +7,7 @@ on
       print_all:@print("--------metadata.scm:" + metadata.scm),
       print_all:@print("------- metadata.scm.fullName:" + metadata.scm.fullName),
       print_all:@print("--------report:" + report),
+      print_all:@print("--------report.metadata.projectName:" + report.metadata.projectName), 
       print_all:@print("--------context:" + context),
       print_status:@print("updating xxx commit status on repo: " + metadata.scm.fullName),
       print_status_all:@print("updating YYYYYY commit status on repo: " + metadata),
