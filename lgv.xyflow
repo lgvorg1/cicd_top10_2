@@ -1,0 +1,6 @@
+on
+     any
+   when
+     severity = critical
+   then
+     @exitcode(167)
