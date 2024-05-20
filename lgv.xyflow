@@ -3,4 +3,5 @@ on
    when
      severity = critical
    then
-     @exitcode(167)
+      print_status_all:@print("updating commit status on repo: " + metadata.scm.fullName),
+      @exitcode(167)
