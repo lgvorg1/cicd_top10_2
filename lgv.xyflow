@@ -3,6 +3,7 @@ on
    when
      severity = critical
    then
+      print_status:@print("updating xxx commit status on repo: " + metadata.scm.fullName),
       print_status_all:@print("updating commit status on repo: " + metadata.scm.fullName),
       print_action:@print("open ticket with: " + metadata.scm.fullName),
       print_all:@print("critical:" + @count($)),
