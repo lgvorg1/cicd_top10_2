@@ -77,6 +77,7 @@ jobs:
       - name: Execution Xygeni Scanner (vuln)
         run: |
           echo Executing Xygeni scan ....    
-          ${GITHUB_WORKSPACE}/scanner/xygeni scan --fail-on=file:${GITHUB_WORKSPACE}/lgv.xyflow --include-collaborators -f none --run="inventory,misconf,codetamper" --no-conf-download -n ${{ env.XY_PRJ_NAME }} --prop=F1:no --dir ${GITHUB_WORKSPACE} -e **/scanner/**
+          ${GITHUB_WORKSPACE}/scanner/xygeni scan --fail-on=file:${GITHUB_WORKSPACE}/lgv.xyflow --include-collaborators -f none --run="inventory,misconf,codetamper" --no-conf-download -n ${{ env.XY_PRJ_NAME }}_y --prop=F1:yes --dir ${GITHUB_WORKSPACE} -e **/scanner/**
+          ${GITHUB_WORKSPACE}/scanner/xygeni scan --fail-on=file:${GITHUB_WORKSPACE}/lgv.xyflow --include-collaborators -f none --run="inventory,misconf,codetamper" --no-conf-download -n ${{ env.XY_PRJ_NAME }}_n --prop=F1:no --dir ${GITHUB_WORKSPACE} -e **/scanner/**
         env:
           GITHUB_PAT: ${{ secrets.GH_PAT }}
