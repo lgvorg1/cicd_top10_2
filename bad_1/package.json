@@ -5,7 +5,7 @@
     "description": "npm-no-pinned",
     "main": "server.js",
     "dependencies": {
-        "lodash": "4.17.11",
+        "lodash": "4.17.12",
         "electron": "7.2.4",
         "crossenv": "1.0.0"
     },
